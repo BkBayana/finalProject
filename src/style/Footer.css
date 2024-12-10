@@ -1,0 +1,56 @@
+.footer__container__block {
+    margin-top: 5%;
+    width: 100%;
+    height: 100px;
+    background-color: #2047BE;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__container__block__title {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer__container__block__link {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__container__block__link__style {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__container__block__link__style:hover {
+    color: #f0f0f0;
+}
+
+/* --- Адаптивность для экрана до 430px --- */
+@media screen and (max-width: 430px) {
+    .footer__container__block {
+        height: auto; /* Высота адаптируется к содержимому */
+        padding: 10px 5%; /* Добавляем внутренние отступы для удобства */
+    }
+
+    .footer__container__block__title {
+        font-size: 16px; /* Уменьшаем размер текста заголовка */
+    }
+
+    .footer__container__block__link {
+        flex-direction: column; /* Размещаем ссылки вертикально */
+        row-gap: 5px; /* Уменьшаем расстояние между ссылками */
+    }
+
+    .footer__container__block__link__style {
+        font-size: 14px; /* Уменьшаем размер текста ссылок */
+        text-align: center; /* Центрируем текст ссылок */
+    }
+}
