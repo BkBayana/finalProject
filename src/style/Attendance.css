@@ -1,4 +1,4 @@
-.app {
+/* .app {
   font-family: Arial, sans-serif;
   text-align: center;
 }
@@ -98,4 +98,25 @@ th {
 
 .Time{
   background-color: #007bff;
-}
+} */
+ .dayBtn{
+  width: 200px;
+  height: 40px;
+  background-color:#007bff ;
+  border:1px solid #002c5b ;
+ }
+ .groupBtn{
+  width: 100px;
+  height: 40px;
+  background-color:#007bff ;
+  border:1px solid #002c5b ;
+ }
+ .dayBlock{
+  display: flex;
+  justify-content: center;
+ }
+ .groupBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }

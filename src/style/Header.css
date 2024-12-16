@@ -44,7 +44,7 @@
 
 .header__menu li a {
     text-decoration: none;
-    color: #2047BE;
+    color: #68696c;
     font-size: 17px;
     font-weight: bold;
     padding: 10px 20px;
@@ -52,7 +52,7 @@
 }
 
 .header__menu li a:hover {
-    background-color: #eaeaea;
+    background-color: #1104fd;
     transform: scale(1.1);
     border-radius: 6px;
 }

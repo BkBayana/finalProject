@@ -5,42 +5,60 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-.contact__page{
+.contact__page {
     width: 100%;
-    height: 400px;
-    background-color: rgb(216, 216, 216);
+    /* height: 400px; */
+    /* background: linear-gradient(135deg, #d8d8d8, #f5f5f5); */
+    /* transition: background 0.5s ease; */
 }
-.contact__page__container__block__title{
-    font-size: 20px;
+/* .contact__page:hover {
+    background: linear-gradient(135deg, #f5f5f5, #d8d8d8);
+} */
+.contact__page__container__block__title {
+    font-size: 24px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
-.contact__page__container__block__get{
+.contact__page__container__block__get {
     display: flex;
 }
-.iconPhoto{
+.iconPhoto {
     width: 40px;
     height: 40px;
+    transition: transform 0.3s ease;
 }
-
-.contact__page__container__wrapper{
+.iconPhoto:hover {
+    transform: scale(1.1);
+}
+.contact__page__container__wrapper {
     padding-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 10%;
 }
-.contact__page__container__block__get{
+.contact__page__container__block__get {
     margin-top: 20px;
     display: flex;
     align-items: center;
     column-gap: 10px;
 }
-.contact__page__container__block__get__title{
+.contact__page__container__block__get__title {
     font-size: 15px;
     font-weight: 700;
 }
-.contact__page__container__block__get__subtitle{
+.contact__page__containner__block__get__subtitle {
     font-size: 13px;
     font-weight: 400;
+}
+.contact__link {
+    font-size: 13px;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.contact__link:hover {
+    color: #0056b3;
 }
 .contact__page__container__wrapper__form {
     width: 300px;
@@ -50,8 +68,12 @@ html, body {
     justify-content: center;
     padding: 20px;
     background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact__page__container__wrapper__form:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
 }
 .contact__page__container__wrapper__form__title {
     font-size: 24px;
@@ -60,30 +82,46 @@ html, body {
     margin-bottom: 20px;
     text-align: center;
 }
-
 .sendblok {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
-.sendblok__input {
+.sendblok__input, .sendblok__textarea {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px;
     font-size: 16px;
     border: none;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px  solid #ccc;
     background-color: transparent;
     color: #333;
     transition: all 0.3s ease;
 }
-.sendblok__input:focus {
+.sendblok__input:focus, .sendblok__textarea:focus {
     border-bottom: 2px solid #007BFF;
     outline: none;
-} 
-.sendblok__input::placeholder {
+}
+.sendblok__input::placeholder, .sendblok__textarea::placeholder {
     color: #999;
-} 
-.sendblok__input:hover {
+}.sendblok__input:hover, .sendblok__textarea:hover {
     border-bottom: 2px solid #555;
-} 
+}
+.sendblok__button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.sendblok__button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.sendblok__button:active {
+    background-color: #003f7f;
+    transform: translateY(0);
+}

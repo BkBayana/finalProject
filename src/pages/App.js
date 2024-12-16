@@ -4,6 +4,9 @@ import Main from '../pages/Main';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Contacts from '../pages/Contacts';
+import Attendance from './Attendance';
+import Example from './Example';
+import Show from './Show';
 
 const App=() => {
   return (
@@ -14,6 +17,9 @@ const App=() => {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/contacts' element={<Contacts />} />
+          <Route path='/attendance' element={<Attendance />} />
+          <Route path='/show' element={<Show />} />
+          {/* <Route path='/example' element={<Main />} /> */}
           </Routes>
           <Footer/>
       </div>
